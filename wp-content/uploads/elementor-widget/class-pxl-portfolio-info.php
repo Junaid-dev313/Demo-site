@@ -1,0 +1,11 @@
+<?php
+
+class PxlPortfolioInfo_Widget extends Pxltheme_Core_Widget_Base{
+    protected $name = 'pxl_portfolio_info';
+    protected $title = 'PXL Portfolio Info';
+    protected $icon = 'eicon-info-circle-o';
+    protected $categories = array( 'pxltheme-core' );
+    protected $params = '{"sections":[{"name":"content_section","label":"Content Settings","tab":"content","controls":[{"name":"portfolio_infos","label":"Portfolio Information Lists","type":"repeater","controls":[{"name":"item_label","label":"Item Label","type":"text","placeholder":"Enter item label","default":"Name:","label_block":true},{"name":"item_value","label":"Item Value","type":"text","placeholder":"Enter item value","default":"ABC","label_block":true}],"default":[{"item_label":"WEBSITE:","item_value":"websroad.com"},{"item_label":"DATE:","item_value":"August 02, 2022"},{"item_label":"SERVICES:","item_value":"Design, Art Direction, Website"}]},{"name":"link","label":"Custom Link","type":"url","placeholder":"https:\/\/your-link.com","default":{"url":"#","is_external":"on"}},{"name":"button_text","label":"Button Text","type":"text","default":"Hire me now","label_block":true}]},{"name":"pi_style","label":"Style","tab":"style","controls":[{"name":"content_color","label":"Content Color","type":"color","selectors":{"{{WRAPPER}} .pi-value":"color: {{VALUE}};"}},{"name":"lbl_color","label":"Label Color","type":"color","selectors":{"{{WRAPPER}} .pi-lbl":"color: {{VALUE}};"}},{"name":"lbl_typo","label":"Label Typography","type":"typography","control_type":"group","selector":"{{WRAPPER}} .pi-lbl"},{"name":"item_animation","label":"Item Motion Effect","type":"animation","condition":[]},{"name":"item_animation_duration","label":"Item Animation Duration","type":"select","default":"normal","options":{"slow":"Slow","normal":"Normal","fast":"Fast"},"condition":{"item_animation!":""}},{"name":"item_animation_delay","label":"Item Animation Delay","type":"number","min":0,"step":100,"condition":{"item_animation!":""}}]}]}';
+    protected $styles = array(  );
+    protected $scripts = array(  );
+}
